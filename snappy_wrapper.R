@@ -1,13 +1,13 @@
 # R wrapper for snappy binding
 
 dyn.load("snappy.so")
-snappy_compress <- function(str) {
-	result <- .Call("rsnappy_compress", as.character(str))
+snappy_compress <- function(s) {
+	result <- .Call("rsnappy_compress", as.character(s))
 	return result
 }
 
-snappy_uncompress <- function(str) {
-	result <- .Call("rsnappy_uncompress", as.character(str))
+snappy_uncompress <- function(s) {
+	result <- .Call("rsnappy_uncompress", as.character(s))
 	return result
 }
 
