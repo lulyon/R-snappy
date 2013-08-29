@@ -27,22 +27,22 @@ SEXP rsnappy_compress(SEXP v)
 	size_t src_len = Rf_length(v);
 	const char* src = CHARACTER(v);
 	size_t dst_max_size = snappy_max_compressed_length(src_len);
-	char* dstmem = (char*)R_alloc(dst_max_size, sizeof(char));
-	if (dstmem != NULL) {
-		if (snappy_compress(src, src_len, dstmem,
+	char* dst = (char*)R_alloc(dst_max_size, sizeof(char));
+	if (dst != NULL) {
+		if (snappy_compress(src, src_len, dst,
 					&dst_max_size) == SNAPPY_OK) {
 			PROTECT(ans = Rf_allocVector(STRSXP, dst_max_size));
-			memcpy(CHARACTER(ans), dstmem, sizeof(char) * dst_max_size);
+			memcpy(CHARACTER(ans), dst, sizeof(char) * dst_max_size);
 			UNPROTECT(1);
 			return ans;
 		}
 		else {
-			printf("Error: snappy_compress fail.\n");
+			printf("Error: snappy_compress fails.\n");
 			return ans;
 		}
 	}
 
-	printf("Error: R_alloc fail.\n");
+	printf("Error: R_alloc fails.\n");
 	return ans;
 }
 
@@ -54,22 +54,25 @@ SEXP rsnappy_uncompress(SEXP v)
 	const char* src = CHARACTER(v);
 	if (snappy_uncompressed_length(src, src_len, &dst_max_size)
 			!= SNAPPY_OK) {
-		printf("Error: snappy_uncompressed_length fail.\n");
+		printf("Error: snappy_uncompressed_length fails.\n");
 		return ans;
 	}
-	char* dstmem = (char*)R_alloc(dst_max_size, sizeof(char));
-	if (dstmem != NULL) {
-		if (snappy_uncompress(src, src_len, dstmem,
+	char* dst = (char*)R_alloc(dst_max_size, sizeof(char));
+	if (dst != NULL) {
+		if (snappy_uncompress(src, src_len, dst,
 					&dst_max_size) == SNAPPY_OK) {
 			PROTECT(ans = Rf_allocVector(STRSXP, dst_max_size));
-			memcpy(CHARACTER(ans), dstmem, sizeof(char) * dst_max_size);
+			memcpy(CHARACTER(ans), dst, sizeof(char) * dst_max_size);
 			UNPROTECT(1);
 			return ans;
 		}
-		free(dstmem);
+		else {
+			printf("Error: snappy_uncompress fails.\n");
+			return ans;
+		}
 	}
 
-	printf("Error: R_alloc fail.\n");
+	printf("Error: R_alloc fails.\n");
 	return ans;
 }
 
