@@ -21,10 +21,11 @@ Here is a sample usage in R shell:
 
         R version 2.14.1 (2011-12-22) Copyright (C) 2011 The R Foundation for Statistical Computing
         > source('snappy_wrapper.R')
-        > compressed <- snappy_compress("hello world!")
-        > uncompressed <- snappy_uncompress(compressed)
-        > uncompressed
-        hello world!
+        > compressed = snappy_compress("hello world!")
+        > uncompressed = snappy_uncompress(compressed)
+        > cat(uncompressed, "\n")
+		hello world!
+		>
 
 Report Bugs
 ===========
