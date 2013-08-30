@@ -291,59 +291,59 @@ configure:7527: $? = 0
 configure:7527: result: yes
 configure:7733: checking for objdir
 configure:7748: result: .libs
-configure:8015: checking if gcc supports -fno-rtti -fno-exceptions
-configure:8033: gcc -c -g -O2  -fno-rtti -fno-exceptions conftest.c >&5
+configure:8019: checking if gcc supports -fno-rtti -fno-exceptions
+configure:8037: gcc -c -g -O2  -fno-rtti -fno-exceptions conftest.c >&5
 cc1: warning: command line option '-fno-rtti' is valid for C++/ObjC++ but not for C [enabled by default]
-configure:8037: $? = 0
-configure:8050: result: no
-configure:8377: checking for gcc option to produce PIC
-configure:8384: result: -fPIC -DPIC
-configure:8392: checking if gcc PIC flag -fPIC -DPIC works
-configure:8410: gcc -c -g -O2  -fPIC -DPIC -DPIC conftest.c >&5
-configure:8414: $? = 0
-configure:8427: result: yes
-configure:8456: checking if gcc static flag -static works
-configure:8484: result: yes
-configure:8499: checking if gcc supports -c -o file.o
-configure:8520: gcc -c -g -O2  -o out/conftest2.o conftest.c >&5
-configure:8524: $? = 0
-configure:8546: result: yes
-configure:8554: checking if gcc supports -c -o file.o
-configure:8601: result: yes
-configure:8634: checking whether the gcc linker (/usr/bin/ld) supports shared libraries
-configure:9791: result: yes
-configure:9828: checking whether -lc should be explicitly linked in
-configure:9836: gcc -c -g -O2  conftest.c >&5
-configure:9839: $? = 0
-configure:9854: gcc -shared  -fPIC -DPIC conftest.o  -v -Wl,-soname -Wl,conftest -o conftest 2\>\&1 \| /bin/grep  -lc  \>/dev/null 2\>\&1
-configure:9857: $? = 0
-configure:9871: result: no
-configure:10031: checking dynamic linker characteristics
-configure:10542: gcc -o conftest -g -O2   -Wl,-rpath -Wl,/foo conftest.c  >&5
-configure:10542: $? = 0
-configure:10776: result: GNU/Linux ld.so
-configure:10883: checking how to hardcode library paths into programs
-configure:10908: result: immediate
-configure:11448: checking whether stripping libraries is possible
-configure:11453: result: yes
-configure:11488: checking if libtool supports shared libraries
-configure:11490: result: yes
-configure:11493: checking whether to build shared libraries
-configure:11514: result: yes
-configure:11517: checking whether to build static libraries
-configure:11521: result: yes
-configure:11617: checking for g++
-configure:11633: found /usr/bin/g++
-configure:11644: result: g++
-configure:11671: checking for C++ compiler version
-configure:11680: g++ --version >&5
+configure:8041: $? = 0
+configure:8054: result: no
+configure:8381: checking for gcc option to produce PIC
+configure:8388: result: -fPIC -DPIC
+configure:8396: checking if gcc PIC flag -fPIC -DPIC works
+configure:8414: gcc -c -g -O2  -fPIC -DPIC -DPIC conftest.c >&5
+configure:8418: $? = 0
+configure:8431: result: yes
+configure:8460: checking if gcc static flag -static works
+configure:8488: result: yes
+configure:8503: checking if gcc supports -c -o file.o
+configure:8524: gcc -c -g -O2  -o out/conftest2.o conftest.c >&5
+configure:8528: $? = 0
+configure:8550: result: yes
+configure:8558: checking if gcc supports -c -o file.o
+configure:8605: result: yes
+configure:8638: checking whether the gcc linker (/usr/bin/ld) supports shared libraries
+configure:9795: result: yes
+configure:9832: checking whether -lc should be explicitly linked in
+configure:9840: gcc -c -g -O2  conftest.c >&5
+configure:9843: $? = 0
+configure:9858: gcc -shared  -fPIC -DPIC conftest.o  -v -Wl,-soname -Wl,conftest -o conftest 2\>\&1 \| /bin/grep  -lc  \>/dev/null 2\>\&1
+configure:9861: $? = 0
+configure:9875: result: no
+configure:10035: checking dynamic linker characteristics
+configure:10546: gcc -o conftest -g -O2   -Wl,-rpath -Wl,/foo conftest.c  >&5
+configure:10546: $? = 0
+configure:10780: result: GNU/Linux ld.so
+configure:10887: checking how to hardcode library paths into programs
+configure:10912: result: immediate
+configure:11452: checking whether stripping libraries is possible
+configure:11457: result: yes
+configure:11492: checking if libtool supports shared libraries
+configure:11494: result: yes
+configure:11497: checking whether to build shared libraries
+configure:11518: result: yes
+configure:11521: checking whether to build static libraries
+configure:11525: result: yes
+configure:11621: checking for g++
+configure:11637: found /usr/bin/g++
+configure:11648: result: g++
+configure:11675: checking for C++ compiler version
+configure:11684: g++ --version >&5
 g++ (Ubuntu/Linaro 4.6.3-1ubuntu5) 4.6.3
 Copyright (C) 2011 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-configure:11691: $? = 0
-configure:11680: g++ -v >&5
+configure:11695: $? = 0
+configure:11684: g++ -v >&5
 Using built-in specs.
 COLLECT_GCC=g++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/i686-linux-gnu/4.6/lto-wrapper
@@ -351,34 +351,34 @@ Target: i686-linux-gnu
 Configured with: ../src/configure -v --with-pkgversion='Ubuntu/Linaro 4.6.3-1ubuntu5' --with-bugurl=file:///usr/share/doc/gcc-4.6/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.6 --enable-shared --enable-linker-build-id --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.6 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --enable-plugin --enable-objc-gc --enable-targets=all --disable-werror --with-arch-32=i686 --with-tune=generic --enable-checking=release --build=i686-linux-gnu --host=i686-linux-gnu --target=i686-linux-gnu
 Thread model: posix
 gcc version 4.6.3 (Ubuntu/Linaro 4.6.3-1ubuntu5) 
-configure:11691: $? = 0
-configure:11680: g++ -V >&5
+configure:11695: $? = 0
+configure:11684: g++ -V >&5
 g++: error: unrecognized option '-V'
 g++: fatal error: no input files
 compilation terminated.
-configure:11691: $? = 4
-configure:11680: g++ -qversion >&5
+configure:11695: $? = 4
+configure:11684: g++ -qversion >&5
 g++: error: unrecognized option '-qversion'
 g++: fatal error: no input files
 compilation terminated.
-configure:11691: $? = 4
-configure:11695: checking whether we are using the GNU C++ compiler
-configure:11714: g++ -c   conftest.cpp >&5
-configure:11714: $? = 0
-configure:11723: result: yes
-configure:11732: checking whether g++ accepts -g
-configure:11752: g++ -c -g  conftest.cpp >&5
-configure:11752: $? = 0
-configure:11793: result: yes
-configure:11818: checking dependency style of g++
-configure:11929: result: gcc3
-configure:11962: checking how to run the C++ preprocessor
-configure:11989: g++ -E  conftest.cpp
-configure:11989: $? = 0
-configure:12003: g++ -E  conftest.cpp
+configure:11695: $? = 4
+configure:11699: checking whether we are using the GNU C++ compiler
+configure:11718: g++ -c   conftest.cpp >&5
+configure:11718: $? = 0
+configure:11727: result: yes
+configure:11736: checking whether g++ accepts -g
+configure:11756: g++ -c -g  conftest.cpp >&5
+configure:11756: $? = 0
+configure:11797: result: yes
+configure:11822: checking dependency style of g++
+configure:11933: result: gcc3
+configure:11966: checking how to run the C++ preprocessor
+configure:11993: g++ -E  conftest.cpp
+configure:11993: $? = 0
+configure:12007: g++ -E  conftest.cpp
 conftest.cpp:23:28: fatal error: ac_nonexistent.h: No such file or directory
 compilation terminated.
-configure:12003: $? = 1
+configure:12007: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "snappy"
@@ -403,13 +403,13 @@ configure: failed program was:
 | #define LT_OBJDIR ".libs/"
 | /* end confdefs.h.  */
 | #include <ac_nonexistent.h>
-configure:12028: result: g++ -E
-configure:12048: g++ -E  conftest.cpp
-configure:12048: $? = 0
-configure:12062: g++ -E  conftest.cpp
+configure:12032: result: g++ -E
+configure:12052: g++ -E  conftest.cpp
+configure:12052: $? = 0
+configure:12066: g++ -E  conftest.cpp
 conftest.cpp:23:28: fatal error: ac_nonexistent.h: No such file or directory
 compilation terminated.
-configure:12062: $? = 1
+configure:12066: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "snappy"
@@ -434,38 +434,38 @@ configure: failed program was:
 | #define LT_OBJDIR ".libs/"
 | /* end confdefs.h.  */
 | #include <ac_nonexistent.h>
-configure:12231: checking for ld used by g++
-configure:12298: result: /usr/bin/ld
-configure:12305: checking if the linker (/usr/bin/ld) is GNU ld
-configure:12320: result: yes
-configure:12375: checking whether the g++ linker (/usr/bin/ld) supports shared libraries
-configure:13380: result: yes
-configure:13416: g++ -c -g -O2  conftest.cpp >&5
-configure:13419: $? = 0
-configure:13939: checking for g++ option to produce PIC
-configure:13946: result: -fPIC -DPIC
-configure:13954: checking if g++ PIC flag -fPIC -DPIC works
-configure:13972: g++ -c -g -O2  -fPIC -DPIC -DPIC conftest.cpp >&5
-configure:13976: $? = 0
-configure:13989: result: yes
-configure:14012: checking if g++ static flag -static works
-configure:14040: result: yes
-configure:14052: checking if g++ supports -c -o file.o
-configure:14073: g++ -c -g -O2  -o out/conftest2.o conftest.cpp >&5
-configure:14077: $? = 0
-configure:14099: result: yes
-configure:14104: checking if g++ supports -c -o file.o
-configure:14151: result: yes
-configure:14181: checking whether the g++ linker (/usr/bin/ld) supports shared libraries
-configure:14220: result: yes
-configure:14361: checking dynamic linker characteristics
-configure:15040: result: GNU/Linux ld.so
-configure:15093: checking how to hardcode library paths into programs
-configure:15118: result: immediate
-configure:15164: checking whether byte ordering is bigendian
-configure:15179: g++ -c -g -O2  conftest.cpp >&5
+configure:12235: checking for ld used by g++
+configure:12302: result: /usr/bin/ld
+configure:12309: checking if the linker (/usr/bin/ld) is GNU ld
+configure:12324: result: yes
+configure:12379: checking whether the g++ linker (/usr/bin/ld) supports shared libraries
+configure:13384: result: yes
+configure:13420: g++ -c -g -O2  conftest.cpp >&5
+configure:13423: $? = 0
+configure:13943: checking for g++ option to produce PIC
+configure:13950: result: -fPIC -DPIC
+configure:13958: checking if g++ PIC flag -fPIC -DPIC works
+configure:13976: g++ -c -g -O2  -fPIC -DPIC -DPIC conftest.cpp >&5
+configure:13980: $? = 0
+configure:13993: result: yes
+configure:14016: checking if g++ static flag -static works
+configure:14044: result: yes
+configure:14056: checking if g++ supports -c -o file.o
+configure:14077: g++ -c -g -O2  -o out/conftest2.o conftest.cpp >&5
+configure:14081: $? = 0
+configure:14103: result: yes
+configure:14108: checking if g++ supports -c -o file.o
+configure:14155: result: yes
+configure:14185: checking whether the g++ linker (/usr/bin/ld) supports shared libraries
+configure:14224: result: yes
+configure:14365: checking dynamic linker characteristics
+configure:15044: result: GNU/Linux ld.so
+configure:15097: checking how to hardcode library paths into programs
+configure:15122: result: immediate
+configure:15168: checking whether byte ordering is bigendian
+configure:15183: g++ -c -g -O2  conftest.cpp >&5
 conftest.cpp:24:9: error: expected unqualified-id before 'not' token
-configure:15179: $? = 1
+configure:15183: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "snappy"
@@ -494,13 +494,13 @@ configure: failed program was:
 | 	     #endif
 | 	     typedef int dummy;
 | 
-configure:15224: g++ -c -g -O2  conftest.cpp >&5
-configure:15224: $? = 0
-configure:15242: g++ -c -g -O2  conftest.cpp >&5
+configure:15228: g++ -c -g -O2  conftest.cpp >&5
+configure:15228: $? = 0
+configure:15246: g++ -c -g -O2  conftest.cpp >&5
 conftest.cpp: In function 'int main()':
 conftest.cpp:30:8: error: 'big' was not declared in this scope
 conftest.cpp:30:12: error: expected ';' before 'endian'
-configure:15242: $? = 1
+configure:15246: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "snappy"
@@ -537,44 +537,44 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:15370: result: no
-configure:15392: checking for stdint.h
-configure:15392: result: yes
-configure:15392: checking stddef.h usability
-configure:15392: g++ -c -g -O2  conftest.cpp >&5
-configure:15392: $? = 0
-configure:15392: result: yes
-configure:15392: checking stddef.h presence
-configure:15392: g++ -E  conftest.cpp
-configure:15392: $? = 0
-configure:15392: result: yes
-configure:15392: checking for stddef.h
-configure:15392: result: yes
-configure:15392: checking sys/mman.h usability
-configure:15392: g++ -c -g -O2  conftest.cpp >&5
-configure:15392: $? = 0
-configure:15392: result: yes
-configure:15392: checking sys/mman.h presence
-configure:15392: g++ -E  conftest.cpp
-configure:15392: $? = 0
-configure:15392: result: yes
-configure:15392: checking for sys/mman.h
-configure:15392: result: yes
-configure:15392: checking sys/resource.h usability
-configure:15392: g++ -c -g -O2  conftest.cpp >&5
-configure:15392: $? = 0
-configure:15392: result: yes
-configure:15392: checking sys/resource.h presence
-configure:15392: g++ -E  conftest.cpp
-configure:15392: $? = 0
-configure:15392: result: yes
-configure:15392: checking for sys/resource.h
-configure:15392: result: yes
-configure:15392: checking windows.h usability
-configure:15392: g++ -c -g -O2  conftest.cpp >&5
+configure:15374: result: no
+configure:15396: checking for stdint.h
+configure:15396: result: yes
+configure:15396: checking stddef.h usability
+configure:15396: g++ -c -g -O2  conftest.cpp >&5
+configure:15396: $? = 0
+configure:15396: result: yes
+configure:15396: checking stddef.h presence
+configure:15396: g++ -E  conftest.cpp
+configure:15396: $? = 0
+configure:15396: result: yes
+configure:15396: checking for stddef.h
+configure:15396: result: yes
+configure:15396: checking sys/mman.h usability
+configure:15396: g++ -c -g -O2  conftest.cpp >&5
+configure:15396: $? = 0
+configure:15396: result: yes
+configure:15396: checking sys/mman.h presence
+configure:15396: g++ -E  conftest.cpp
+configure:15396: $? = 0
+configure:15396: result: yes
+configure:15396: checking for sys/mman.h
+configure:15396: result: yes
+configure:15396: checking sys/resource.h usability
+configure:15396: g++ -c -g -O2  conftest.cpp >&5
+configure:15396: $? = 0
+configure:15396: result: yes
+configure:15396: checking sys/resource.h presence
+configure:15396: g++ -E  conftest.cpp
+configure:15396: $? = 0
+configure:15396: result: yes
+configure:15396: checking for sys/resource.h
+configure:15396: result: yes
+configure:15396: checking windows.h usability
+configure:15396: g++ -c -g -O2  conftest.cpp >&5
 conftest.cpp:60:21: fatal error: windows.h: No such file or directory
 compilation terminated.
-configure:15392: $? = 1
+configure:15396: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "snappy"
@@ -636,12 +636,12 @@ configure: failed program was:
 | # include <unistd.h>
 | #endif
 | #include <windows.h>
-configure:15392: result: no
-configure:15392: checking windows.h presence
-configure:15392: g++ -E  conftest.cpp
+configure:15396: result: no
+configure:15396: checking windows.h presence
+configure:15396: g++ -E  conftest.cpp
 conftest.cpp:27:21: fatal error: windows.h: No such file or directory
 compilation terminated.
-configure:15392: $? = 1
+configure:15396: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "snappy"
@@ -670,24 +670,24 @@ configure: failed program was:
 | #define HAVE_SYS_RESOURCE_H 1
 | /* end confdefs.h.  */
 | #include <windows.h>
-configure:15392: result: no
-configure:15392: checking for windows.h
-configure:15392: result: no
-configure:15392: checking byteswap.h usability
-configure:15392: g++ -c -g -O2  conftest.cpp >&5
-configure:15392: $? = 0
-configure:15392: result: yes
-configure:15392: checking byteswap.h presence
-configure:15392: g++ -E  conftest.cpp
-configure:15392: $? = 0
-configure:15392: result: yes
-configure:15392: checking for byteswap.h
-configure:15392: result: yes
-configure:15392: checking sys/byteswap.h usability
-configure:15392: g++ -c -g -O2  conftest.cpp >&5
+configure:15396: result: no
+configure:15396: checking for windows.h
+configure:15396: result: no
+configure:15396: checking byteswap.h usability
+configure:15396: g++ -c -g -O2  conftest.cpp >&5
+configure:15396: $? = 0
+configure:15396: result: yes
+configure:15396: checking byteswap.h presence
+configure:15396: g++ -E  conftest.cpp
+configure:15396: $? = 0
+configure:15396: result: yes
+configure:15396: checking for byteswap.h
+configure:15396: result: yes
+configure:15396: checking sys/byteswap.h usability
+configure:15396: g++ -c -g -O2  conftest.cpp >&5
 conftest.cpp:61:26: fatal error: sys/byteswap.h: No such file or directory
 compilation terminated.
-configure:15392: $? = 1
+configure:15396: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "snappy"
@@ -750,12 +750,12 @@ configure: failed program was:
 | # include <unistd.h>
 | #endif
 | #include <sys/byteswap.h>
-configure:15392: result: no
-configure:15392: checking sys/byteswap.h presence
-configure:15392: g++ -E  conftest.cpp
+configure:15396: result: no
+configure:15396: checking sys/byteswap.h presence
+configure:15396: g++ -E  conftest.cpp
 conftest.cpp:28:26: fatal error: sys/byteswap.h: No such file or directory
 compilation terminated.
-configure:15392: $? = 1
+configure:15396: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "snappy"
@@ -785,14 +785,14 @@ configure: failed program was:
 | #define HAVE_BYTESWAP_H 1
 | /* end confdefs.h.  */
 | #include <sys/byteswap.h>
-configure:15392: result: no
-configure:15392: checking for sys/byteswap.h
-configure:15392: result: no
-configure:15392: checking sys/endian.h usability
-configure:15392: g++ -c -g -O2  conftest.cpp >&5
+configure:15396: result: no
+configure:15396: checking for sys/byteswap.h
+configure:15396: result: no
+configure:15396: checking sys/endian.h usability
+configure:15396: g++ -c -g -O2  conftest.cpp >&5
 conftest.cpp:61:24: fatal error: sys/endian.h: No such file or directory
 compilation terminated.
-configure:15392: $? = 1
+configure:15396: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "snappy"
@@ -855,12 +855,12 @@ configure: failed program was:
 | # include <unistd.h>
 | #endif
 | #include <sys/endian.h>
-configure:15392: result: no
-configure:15392: checking sys/endian.h presence
-configure:15392: g++ -E  conftest.cpp
+configure:15396: result: no
+configure:15396: checking sys/endian.h presence
+configure:15396: g++ -E  conftest.cpp
 conftest.cpp:28:24: fatal error: sys/endian.h: No such file or directory
 compilation terminated.
-configure:15392: $? = 1
+configure:15396: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "snappy"
@@ -890,69 +890,69 @@ configure: failed program was:
 | #define HAVE_BYTESWAP_H 1
 | /* end confdefs.h.  */
 | #include <sys/endian.h>
-configure:15392: result: no
-configure:15392: checking for sys/endian.h
-configure:15392: result: no
-configure:15392: checking sys/time.h usability
-configure:15392: g++ -c -g -O2  conftest.cpp >&5
-configure:15392: $? = 0
-configure:15392: result: yes
-configure:15392: checking sys/time.h presence
-configure:15392: g++ -E  conftest.cpp
-configure:15392: $? = 0
-configure:15392: result: yes
-configure:15392: checking for sys/time.h
-configure:15392: result: yes
-configure:15405: checking for mmap
-configure:15405: g++ -o conftest -g -O2   conftest.cpp  >&5
-configure:15405: $? = 0
-configure:15405: result: yes
-configure:15427: checking for 'gtest-config'
-configure:15448: checking for gtest-config
-configure:15481: result: no
-configure:15502: result: no
-configure:15601: checking for pkg-config
-configure:15619: found /usr/bin/pkg-config
-configure:15631: result: /usr/bin/pkg-config
-configure:15656: checking pkg-config is at least version 0.9.0
-configure:15659: result: yes
-configure:15669: checking for gflags
-configure:15676: $PKG_CONFIG --exists --print-errors "libgflags"
+configure:15396: result: no
+configure:15396: checking for sys/endian.h
+configure:15396: result: no
+configure:15396: checking sys/time.h usability
+configure:15396: g++ -c -g -O2  conftest.cpp >&5
+configure:15396: $? = 0
+configure:15396: result: yes
+configure:15396: checking sys/time.h presence
+configure:15396: g++ -E  conftest.cpp
+configure:15396: $? = 0
+configure:15396: result: yes
+configure:15396: checking for sys/time.h
+configure:15396: result: yes
+configure:15409: checking for mmap
+configure:15409: g++ -o conftest -g -O2   conftest.cpp  >&5
+configure:15409: $? = 0
+configure:15409: result: yes
+configure:15431: checking for 'gtest-config'
+configure:15452: checking for gtest-config
+configure:15485: result: no
+configure:15506: result: no
+configure:15605: checking for pkg-config
+configure:15623: found /usr/bin/pkg-config
+configure:15635: result: /usr/bin/pkg-config
+configure:15660: checking pkg-config is at least version 0.9.0
+configure:15663: result: yes
+configure:15673: checking for gflags
+configure:15680: $PKG_CONFIG --exists --print-errors "libgflags"
 Package libgflags was not found in the pkg-config search path.
 Perhaps you should add the directory containing `libgflags.pc'
 to the PKG_CONFIG_PATH environment variable
 No package 'libgflags' found
-configure:15679: $? = 1
-configure:15693: $PKG_CONFIG --exists --print-errors "libgflags"
+configure:15683: $? = 1
+configure:15697: $PKG_CONFIG --exists --print-errors "libgflags"
 Package libgflags was not found in the pkg-config search path.
 Perhaps you should add the directory containing `libgflags.pc'
 to the PKG_CONFIG_PATH environment variable
 No package 'libgflags' found
-configure:15696: $? = 1
-configure:15710: result: no
+configure:15700: $? = 1
+configure:15714: result: no
 No package 'libgflags' found
-configure:15754: checking if the compiler supports __builtin_expect
-configure:15770: g++ -c -g -O2  conftest.cpp >&5
-configure:15770: $? = 0
-configure:15773: result: yes
-configure:15792: checking if the compiler supports __builtin_ctzll
-configure:15808: g++ -c -g -O2  conftest.cpp >&5
-configure:15808: $? = 0
-configure:15811: result: yes
-configure:15834: checking for zlibVersion in -lz
-configure:15859: g++ -o conftest -g -O2   conftest.cpp -lz   >&5
-configure:15859: $? = 0
-configure:15868: result: yes
-configure:15886: checking for lzo1x_1_15_compress in -llzo2
-configure:15911: g++ -o conftest -g -O2   conftest.cpp -llzo2   >&5
-configure:15911: $? = 0
-configure:15920: result: yes
-configure:15938: checking for lzf_compress in -llzf
-configure:15963: g++ -o conftest -g -O2   conftest.cpp -llzf   >&5
+configure:15758: checking if the compiler supports __builtin_expect
+configure:15774: g++ -c -g -O2  conftest.cpp >&5
+configure:15774: $? = 0
+configure:15777: result: yes
+configure:15796: checking if the compiler supports __builtin_ctzll
+configure:15812: g++ -c -g -O2  conftest.cpp >&5
+configure:15812: $? = 0
+configure:15815: result: yes
+configure:15838: checking for zlibVersion in -lz
+configure:15863: g++ -o conftest -g -O2   conftest.cpp -lz   >&5
+configure:15863: $? = 0
+configure:15872: result: yes
+configure:15890: checking for lzo1x_1_15_compress in -llzo2
+configure:15915: g++ -o conftest -g -O2   conftest.cpp -llzo2   >&5
+configure:15915: $? = 0
+configure:15924: result: yes
+configure:15942: checking for lzf_compress in -llzf
+configure:15967: g++ -o conftest -g -O2   conftest.cpp -llzf   >&5
 /usr/bin/ld: error: cannot find -llzf
 conftest.cpp:44: error: undefined reference to 'lzf_compress'
 collect2: ld returned 1 exit status
-configure:15963: $? = 1
+configure:15967: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "snappy"
@@ -1001,13 +1001,13 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:15972: result: no
-configure:15990: checking for fastlz_compress in -lfastlz
-configure:16015: g++ -o conftest -g -O2   conftest.cpp -lfastlz   >&5
+configure:15976: result: no
+configure:15994: checking for fastlz_compress in -lfastlz
+configure:16019: g++ -o conftest -g -O2   conftest.cpp -lfastlz   >&5
 /usr/bin/ld: error: cannot find -lfastlz
 conftest.cpp:44: error: undefined reference to 'fastlz_compress'
 collect2: ld returned 1 exit status
-configure:16015: $? = 1
+configure:16019: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "snappy"
@@ -1056,13 +1056,13 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:16024: result: no
-configure:16042: checking for qlz_compress in -lquicklz
-configure:16067: g++ -o conftest -g -O2   conftest.cpp -lquicklz   >&5
+configure:16028: result: no
+configure:16046: checking for qlz_compress in -lquicklz
+configure:16071: g++ -o conftest -g -O2   conftest.cpp -lquicklz   >&5
 /usr/bin/ld: error: cannot find -lquicklz
 conftest.cpp:44: error: undefined reference to 'qlz_compress'
 collect2: ld returned 1 exit status
-configure:16067: $? = 1
+configure:16071: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "snappy"
@@ -1111,8 +1111,8 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:16076: result: no
-configure:16264: creating ./config.status
+configure:16080: result: no
+configure:16268: creating ./config.status
 
 ## ---------------------- ##
 ## Running config.status. ##
@@ -1132,6 +1132,7 @@ on luliang-QSH4
 config.status:1184: creating Makefile
 config.status:1184: creating snappy-stubs-public.h
 config.status:1184: creating config.h
+config.status:1365: config.h is unchanged
 config.status:1413: executing depfiles commands
 config.status:1413: executing libtool commands
 

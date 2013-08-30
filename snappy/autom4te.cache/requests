@@ -12,12 +12,7 @@
                       [
                         '/usr/share/autoconf/autoconf/autoconf.m4f',
                         '/usr/share/aclocal/argz.m4',
-                        '/usr/share/aclocal/libtool.m4',
                         '/usr/share/aclocal/ltdl.m4',
-                        '/usr/share/aclocal/ltoptions.m4',
-                        '/usr/share/aclocal/ltsugar.m4',
-                        '/usr/share/aclocal/ltversion.m4',
-                        '/usr/share/aclocal/lt~obsolete.m4',
                         '/usr/share/aclocal/pkg.m4',
                         '/usr/share/aclocal-1.11/amversion.m4',
                         '/usr/share/aclocal-1.11/auxdir.m4',
@@ -38,6 +33,11 @@
                         '/usr/share/aclocal-1.11/substnot.m4',
                         '/usr/share/aclocal-1.11/tar.m4',
                         'm4/gtest.m4',
+                        'm4/libtool.m4',
+                        'm4/ltoptions.m4',
+                        'm4/ltsugar.m4',
+                        'm4/ltversion.m4',
+                        'm4/lt~obsolete.m4',
                         'configure.ac'
                       ],
                       {
