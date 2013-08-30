@@ -1,5 +1,6 @@
 
-CC=gcc
+CC=g++
+RC=R CMD COMPILE 
 CPPFLAGS=-fPIC -shared -Wall -g -O2
 all:snappy.so
 
@@ -8,7 +9,7 @@ snappy.so:r-snappy.o snappy.o snappy-c.o\
 	$(CC)  $(CPPFLAGS) -o $@ $^
 
 r-snappy.o:r-snappy.c
-	$(CC) -o $@ -c $^
+	$(RC) $^
 
 snappy.o:snappy/snappy.cc
 	$(CC) -o $@ -c $^
@@ -26,3 +27,4 @@ snappy-stubs-interal.o:snappy/snappy-stubs-internal.cc
 
 clean:
 	rm *.o snappy.so
+
