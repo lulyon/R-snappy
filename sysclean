@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "Try to clean your system, please wait..."
+
+(make clean > /dev/null 2>&1)
+(cd snappy && make clean > /dev/null 2>&1)
+
+
+echo "*****************************************"
+echo "*   Finished cleaning your system!   *"
+echo "*****************************************"
+
