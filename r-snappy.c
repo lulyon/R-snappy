@@ -32,7 +32,7 @@ SEXP rsnappy_compress(SEXP v)
 	if (dst != NULL) {
 		if (snappy_compress(src, src_len, dst,
 					&dst_max_size) == SNAPPY_OK) {
-			PROTECT(ans = NEW_CHARACTER(dst_max_size));
+			PROTECT(ans = NEW_CHARACTER(1));
 			SET_STRING_ELT(ans, 0, mkCharLen(dst, dst_max_size));
 			UNPROTECT(2);
 			return ans;
@@ -65,7 +65,7 @@ SEXP rsnappy_uncompress(SEXP v)
 	if (dst != NULL) {
 		if (snappy_uncompress(src, src_len, dst,
 					&dst_max_size) == SNAPPY_OK) {
-			PROTECT(ans = NEW_CHARACTER(dst_max_size));
+			PROTECT(ans = NEW_CHARACTER(1));
 			SET_STRING_ELT(ans, 0, mkCharLen(dst, dst_max_size));
 			UNPROTECT(2);
 			return ans;
