@@ -84,3 +84,25 @@ SEXP rsnappy_uncompress(SEXP v)
 
 
 
+SEXP rsnappy_validate_compressed_buffer(SEXP v)
+{
+	SEXP ans;
+	PROTECT(v = AS_CHARACTER(v));
+	const char* src = CHAR(STRING_ELT(v, 0));
+	size_t src_len = strlen(src);
+
+	if(snappy_validate_compressed_buffer(src, src_len) == SNAPPY_OK) {
+		PROTECT(ans = NEW_LOGICAL(1));
+		int *ians = LOGICAL(ans);
+		*ians = TRUE;
+		UNPROTECT(2);
+		return ans;
+	}
+	PROTECT(ans = NEW_LOGICAL(1));
+	int *ians = LOGICAL(ans);
+	*ians = FALSE;
+	UNPROTECT(2);
+	return ans;
+}
+
+
