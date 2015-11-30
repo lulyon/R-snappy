@@ -31,5 +31,5 @@ Here is a sample usage in R shell:
 
 Report Bugs
 ===========
-Please report bugs to lulyon AT 126 DOT com
+Please report bugs to lulyon AT 126 DOT com or lualu AT tencent DOT com .
 
